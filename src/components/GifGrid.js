@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 export const GifGrid = ({ category }) => {
-  const [count, setCount] = useState(0);
-
   useEffect(() => {
     getGifs();
   }, []);
@@ -25,8 +23,6 @@ export const GifGrid = ({ category }) => {
   return (
     <div>
       <h3>{category}</h3>
-      <h3>{count}</h3>
-      <button onClick={() => setCount(count + 1)}></button>
     </div>
   );
 };
